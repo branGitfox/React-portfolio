@@ -7,8 +7,8 @@ const style = {
         padding:'20px',
         // borderBottom:'solid 1px black',
         backgroundColor:'rgb(2, 10, 121)',
-        boxShadow:'0px 1px 10px',
-        height:'12vh'
+        boxShadow:'0px 1px 10px puple',
+        height:'10vh'
     },
 
     span:{
@@ -39,7 +39,7 @@ function Header(){
             <h2 style={style.h2}><span style={style.span}>{'<'}</span>BrandonDEV<span style={style.span}>{'/>'}</span></h2>
         </div>
         <div className="nav-link">
-            <a style={style.navlinka} href="#">Github</a>
+            <a style={style.navlinka} href="#">GitHub</a>
         </div>
     </nav>
 }

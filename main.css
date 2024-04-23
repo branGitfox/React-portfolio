@@ -11,6 +11,7 @@
     min-height: 100vh;
     margin: auto;
     /* color: rgb(2, 10, 121); */
+    background:linear-gradient( rgba(1, 1, 100, 0.808) , rgb(53, 2, 53));
 }
 
 a:hover{
