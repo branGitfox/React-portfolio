@@ -10,6 +10,19 @@
     border:solid 1px ;  
     min-height: 100vh;
     margin: auto;
+    /* color: rgb(2, 10, 121); */
+}
+
+a:hover{
+    background-color: rgba(240, 237, 237, 0.781);
+    background-color: rgb(101, 0, 148);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width:929px) {
+    .container{
+        width: 100%;
+    }
 }
 
 
