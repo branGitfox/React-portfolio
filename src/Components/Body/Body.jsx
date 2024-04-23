@@ -31,10 +31,21 @@ const style = {
         color:'whitesmoke',
         fontWeight:'200',
         marginTop:'7px',
+        marginBottom:'2rem',
         fontSize:'17px',
         lineHeight:'20px'
 
     },
+
+    label:{
+        padding:'10px 20px',
+        background:'linear-gradient( rgba(1, 1, 100, 0.808) , rgb(53, 2, 53)',
+        border:'solid 1px purple',
+        borderRadius:'5px',
+        textTransform:'capitalize',
+        color:'violet',
+        boxShadow:'0px 0px 5px violet'
+    }
 
 
     // intro:{
@@ -55,8 +66,8 @@ function Body() {
                 <p style={style.motivation}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quia. Maxime quas voluptas aperiam, modi pariatur deserunt earum eveniet fugit laboriosam facilis possimus, voluptates accusantium repellat! Quidem iure repellat a.</p>
             </div>
             <div className="hire">
-                <label htmlFor="input">
-                    Join me
+                <label style={style.label} htmlFor="input">
+                    Contact me
                 </label>
             </div>
         </div>
