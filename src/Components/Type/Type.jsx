@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const phrase = 'Hello, welcome to my portfolio'
 const style ={
     div:{
-        width:'40%',
+        maxWidth:'90%',
         textAlign:'center',
         // marginTop:'10px',
         margin: ' 20px auto'

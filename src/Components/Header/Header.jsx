@@ -6,7 +6,7 @@ const style = {
         justifyContent:'space-between',
         padding:'20px',
         // borderBottom:'solid 1px black',
-        backgroundColor:'rgb(2, 10, 121)',
+        backgroundColor:'transparent',
         boxShadow:'0px 1px 10px puple',
         height:'10vh'
     },

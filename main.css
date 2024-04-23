@@ -12,18 +12,27 @@
     margin: auto;
     /* color: rgb(2, 10, 121); */
     background:linear-gradient( rgba(1, 1, 100, 0.808) , rgb(53, 2, 53));
+    /* color: color-mix(in srgb, red , green );
+     */
 }
 
 a:hover{
     background-color: rgba(240, 237, 237, 0.781);
     background-color: rgb(101, 0, 148);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 @media screen and (max-width:929px) {
     .container{
         width: 100%;
     }
+
+  
+
+    /* .typing-container{
+        width: 90%;
+    } */
 }
 
 
