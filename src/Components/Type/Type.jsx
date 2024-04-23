@@ -1,5 +1,21 @@
 import React, { useEffect, useRef, useState } from 'react';
 const phrase = 'Hello, welcome to my portfolio'
+const style ={
+    div:{
+        width:'40%',
+        textAlign:'center',
+        // marginTop:'10px',
+        margin: ' 20px auto'
+    },
+
+    p:{
+        color:'whitesmoke',
+        fontWeight:'200',
+        letterSpacing:'2px',
+        fontSize:'30px'
+    }
+
+}
 function Type(){
     // const ref = useRef()
     const[index, setIndex]=useState(0)
@@ -21,8 +37,8 @@ function Type(){
     }, [index])
 
     
-    return <div className="typing-container">
-        <p>{typed}</p>
+    return <div style={style.div} className="typing-container">
+        <p style={style.p}>{typed}</p>
     </div>
 }
 
