@@ -1,5 +1,6 @@
 import React from 'react';
 import './Body.css'
+import me from '../../assets/me.png'
 const style = {
     body:{
         width:'90%',
@@ -55,7 +56,11 @@ const style = {
         height:'250px',
         // border:'solid 1px violet',
         borderRadius:'50%',
-        boxShadow:'1px 1px 5px violet'
+        boxShadow:'1px 1px 5px violet',
+        background:`url(${me})`,
+        backgroundRepeat:'no-repeat',
+        backgroundsize:'contain',
+        backgroundPosition:'center'
     }
 
 
@@ -84,7 +89,7 @@ function Body() {
         </div>
         <div style={style.profil} className="profil">
                 <div style={style.pImgC} className="profil-img-container">
-                    <img src="./me.png" alt="" />
+                    {/* <img src={reactSvg} alt="" /> */}
                 </div>
         </div>
     </div>
