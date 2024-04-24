@@ -10,9 +10,12 @@ const style = {
     },
 
     profil:{
-        width:'35%',
-        height:'30px',
-        border:'solid 1px black'
+        // width:'35%',
+        height:'auto',
+        border:'solid 1px black',
+        display:'flex',
+        justifyContent:'center'
+        
     },
 
     nom:{
@@ -45,6 +48,14 @@ const style = {
         textTransform:'capitalize',
         color:'violet',
         boxShadow:'0px 0px 5px violet'
+    },
+
+    pImgC:{
+        width:'250px',
+        height:'250px',
+        // border:'solid 1px violet',
+        borderRadius:'50%',
+        boxShadow:'1px 1px 5px violet'
     }
 
 
@@ -72,7 +83,9 @@ function Body() {
             </div>
         </div>
         <div style={style.profil} className="profil">
-
+                <div style={style.pImgC} className="profil-img-container">
+                    <img src="./me.png" alt="" />
+                </div>
         </div>
     </div>
 }

@@ -1,17 +1,27 @@
-@media screen and (max-width:929px){
-    .intro{ 
+@media screen and (max-width:1299px){
+    .intro, .profil{ 
         
         width: 100%;
         /* background-color: red; */
+        height:auto;
+
     }   
+
+    .body{
+        gap: 5rem;
+    }
 }
 
 @media screen and (min-width:1300px){
-    .intro{ 
+    .intro,.profil{ 
         
         width: 45%;
         /* background-color: red; */
+        height:auto;
+
     }   
+
+
 }
 
 
