@@ -32,6 +32,7 @@ function Type(){
 
         return () => clearTimeout(ty)
     })
+    
     useEffect(() => {
         setTyped(typed+phrase[index])
     }, [index])

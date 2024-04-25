@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Components/Header/Header'
 import Type from './Components/Type/Type'
 import Body from './Components/Body/Body'
+import Download from './Components/Cv/Download'
 
 function App() {  
 
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Type />
         <Body />
+        <Download />
     </div>
   </>
 }

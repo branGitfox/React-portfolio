@@ -13,7 +13,7 @@ const style = {
     profil:{
         // width:'35%',
         height:'auto',
-        border:'solid 1px black',
+        // border:'solid 1px black',
         display:'flex',
         justifyContent:'center'
         
@@ -48,7 +48,7 @@ const style = {
         borderRadius:'5px',
         textTransform:'capitalize',
         color:'violet',
-        boxShadow:'0px 0px 5px violet'
+        boxShadow:'0px 0px 10px violet'
     },
 
     pImgC:{
