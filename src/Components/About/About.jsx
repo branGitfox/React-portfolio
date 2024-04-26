@@ -5,8 +5,9 @@ const style={
    div:{ width:'100%',
     display:'flex',
     justifyContent:'center',
-    // padding:'10px',
-    marginTop:'3rem'
+    // paddingLeft:'17px',
+    marginTop:'3rem',
+
     },
 
     img:{

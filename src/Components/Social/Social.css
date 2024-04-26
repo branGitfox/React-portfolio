@@ -10,4 +10,10 @@
        }
  }  
 
+ @media screen and (max-width:408px){
+    .social-container{
+        gap: 1rem;
+    }
+ }
+
 

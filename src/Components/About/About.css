@@ -4,9 +4,9 @@
         height:1300px;
     }
  }
-/*  
- @media screen and (min-width:1300px){
-     .social-container{
-         width: 40%;
+ 
+ @media screen and (min-width:408px){
+     .about-container{
+        padding-left: 17px;
         }
-  } */
+  }
