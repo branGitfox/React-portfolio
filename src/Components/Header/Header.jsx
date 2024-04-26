@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaGithub } from "react-icons/fa";
+
 const style = {
     nav:{
         display:'flex',
@@ -23,12 +25,17 @@ const style = {
         color:'white'
     },
     navlinka:{
-        padding:'20px 30px',
+        padding:'15px 30px',
         textDecoration:'none',
         color:'whitesmoke',
         backgroundColor:'rgb(101, 0, 148)',
         borderRadius:'5px'
-    }
+    },
+
+    // icon:{
+    //     width:'30px',
+    //     height:'16px'
+    // }
 
     
 }
@@ -39,7 +46,7 @@ function Header(){
             <h2 style={style.h2}><span style={style.span}>{'<'}</span>BrandonDEV<span style={style.span}>{'/>'}</span></h2>
         </div>
         <div className="nav-link">
-            <a style={style.navlinka} href="#">GitHub</a>
+            <a style={style.navlinka} href="#"><FaGithub style={style.icon}/> GitHub</a>
         </div>
     </nav>
 }
