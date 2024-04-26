@@ -48,7 +48,8 @@ const style = {
         borderRadius:'5px',
         textTransform:'capitalize',
         color:'violet',
-        boxShadow:'0px 0px 10px violet'
+        boxShadow:'0px 0px 10px violet',
+        cursor:'pointer'
     },
 
     pImgC:{

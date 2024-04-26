@@ -14,6 +14,7 @@
     background:linear-gradient( rgba(1, 1, 100, 0.808) , rgb(53, 2, 53));
     /* color: color-mix(in srgb, red , green );
      */
+     overflow-x: hidden;
 }
 
 a:hover{

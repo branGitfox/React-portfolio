@@ -16,6 +16,7 @@ const style = {
         height:'50px',
         borderRadius:'50%',
         border:'solid 2px purple',
+        boxShadow:'inset 0px 0px 2px purple'
         // marginRight:'10px',
         
     }
