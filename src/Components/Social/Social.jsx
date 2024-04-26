@@ -12,7 +12,7 @@ const style = {
         // border:'solid 1px black',
         margin:'auto',
         marginTop:'7rem',
-        gap:'4rem'
+        gap:'2rem'
 
     },
 

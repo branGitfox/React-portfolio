@@ -5,6 +5,7 @@ import Body from './Components/Body/Body'
 import Download from './Components/Cv/Download'
 import Social from './Components/Social/Social'
 import About from './Components/About/About'
+import Skills from './Components/Skills/Skills'
 
 function App() {  
 
@@ -16,6 +17,7 @@ function App() {
         <Download />
         <Social />
         <About />
+        <Skills />
     </div>
   </>
 }
