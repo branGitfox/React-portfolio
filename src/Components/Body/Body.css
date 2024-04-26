@@ -26,6 +26,50 @@
 
 }
 
+.profil-img-container{
+    animation-name: remix;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    
+    transition: 2s;
+}
+
+@keyframes remix {
+    0%{
+        
+        box-shadow: 0px 0px 15px pink;
+         /* transition: all 2s; */
+
+    }
+
+    25%{
+    /* transition:  1s; */
+
+        box-shadow: 1px 1px 15px rgb(130, 28, 139);
+
+    }
+
+    50%{
+        /* transition:  1s; */
+
+        box-shadow: 2px 2px 15px rgb(56, 132, 218);
+    }
+
+    75%{
+        /* transition:  1s; */
+
+        box-shadow: 3px 3px 15px violet;
+    }
+
+    100%{
+        /* transition:  1s; */
+
+        box-shadow: 4px 4px 15px rgb(128, 0, 100);
+    }
+}
+
 
 
    

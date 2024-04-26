@@ -1,4 +1,5 @@
 import React from 'react';
+import './Download.css'
 const style={
     div:{
         textAlign:'center',
@@ -10,7 +11,8 @@ const style={
         textDecoration:'none',
         textShadow:'1px 1px 2px violet',
         boxShadow:'1px 1px 5px violet',
-        borderRadius:'20px'
+        borderRadius:'20px',
+        transition:'.5s'
 
     }
 }

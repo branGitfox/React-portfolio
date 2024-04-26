@@ -1,6 +1,6 @@
 import React from 'react';
 import './Body.css'
-import me from '../../assets/me.png'
+import me from '../../assets/me.jpeg'
 const style = {
     body:{
         width:'90%',
@@ -89,7 +89,7 @@ function Body() {
             </div>
         </div>
         <div style={style.profil} className="profil">
-                <div style={style.pImgC} className="profil-img-container">
+                <div  style={style.pImgC} className="profil-img-container">
                     {/* <img src={reactSvg} alt="" /> */}
                 </div>
         </div>
