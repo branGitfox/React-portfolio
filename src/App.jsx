@@ -6,9 +6,17 @@ import Download from './Components/Cv/Download'
 import Social from './Components/Social/Social'
 import About from './Components/About/About'
 import Skills from './Components/Skills/Skills'
-
+const TECHNOS = [
+  {'name':'JS', 'type':'front'},
+  {'name':'HTML', 'type':'front'},
+  {'name':'css', 'type':'front'},
+  {'name':'PHP', 'type':'back'},
+  {'name':'Mysql', 'type':'back'},
+  {'name':'Ajax', 'type':'back'},
+  {'name':'Git', 'type':'others'},
+]
 function App() {  
-
+  
   return <>
     <div className="container">
         <Header />
@@ -17,7 +25,7 @@ function App() {
         <Download />
         <Social />
         <About />
-        <Skills />
+        <Skills technos={TECHNOS}/>
     </div>
   </>
 }
