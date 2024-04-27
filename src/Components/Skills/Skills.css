@@ -1,0 +1,12 @@
+.active{
+    background-color: purple;
+    color: white;
+    transition:all 1s;
+}
+
+.noneActive{
+    background-color: rgb(61, 1, 61);
+    color: grey;
+    transition:all 1s;
+
+}

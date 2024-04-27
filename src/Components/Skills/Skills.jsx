@@ -1,4 +1,7 @@
 import React from 'react';
+import './Skills.css'
+import { TbBrandJavascript } from "react-icons/tb";
+
 const style = {
 
     div:{
@@ -53,20 +56,22 @@ const style = {
 
   
 }
-function Skills({active, handleFiltre, technos}){
+function Skills({technos ,handleFiltre , filtre}){
+  
+    
     return <div style={style.div} className="skills-container">
         <h2 style={style.h2}>Skills</h2>
         <div style={style.filtresContainer} className="filtres-container">
-            <button style={style.btns}>All</button>
-            <button style={style.btns}>Front-Ends</button>
-            <button style={style.btns}>Back-Ends</button>
-            <button style={style.btns}>Others</button>
+            <button className={filtre==='All'?'active':'noneActive'} onClick={(e)=>handleFiltre(e)} style={style.btns}>All</button>
+            <button className={filtre==='Front-Ends'?'active':'noneActive'} onClick={(e)=>handleFiltre(e)} style={style.btns}>Front-Ends</button>
+            <button className={filtre==='Back-Ends'?'active':'noneActive'} onClick={(e)=>handleFiltre(e)} style={style.btns}>Back-Ends</button>
+            <button className={filtre==='Others'?'active':'noneActive'} onClick={(e)=>handleFiltre(e)} style={style.btns}>Others</button>
             <div style={style.tecnoContainer} className="technos-container">
-            <hr />
+            {/* <hr /> */}
                 <div style={style.divTech}>
                     {
                         technos.map(t => (
-                            <div key={t.name} style={style.techs} className="techs">{t.name}</div>
+                            <div key={t.name} style={style.techs}  className="techs">{t.name}</div>
                         ))
                     }
                    

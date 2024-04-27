@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './Components/Header/Header'
 import Type from './Components/Type/Type'
 import Body from './Components/Body/Body'
@@ -15,8 +15,32 @@ const TECHNOS = [
   {'name':'Ajax', 'type':'back'},
   {'name':'Git', 'type':'others'},
 ]
-function App() {  
-  
+function App() { 
+  const [filtre, setFiltre] = useState('All')
+  const handle = (e) => {
+    setFiltre(e.target.textContent)
+  }
+
+  const technos = TECHNOS.filter(filt => {
+      // if(filtre === 'All'){
+      //   return true
+      // }
+
+      if(filtre === 'Front-Ends' && filt.type!=='front'){
+        return false
+      }
+
+      if(filtre === 'Back-Ends' && filt.type!=='back'){
+        return false
+      }
+
+      if(filtre === 'Others' && filt.type!=='others'){
+        return false
+      }
+
+      return true
+
+  })
   return <>
     <div className="container">
         <Header />
@@ -25,7 +49,7 @@ function App() {
         <Download />
         <Social />
         <About />
-        <Skills technos={TECHNOS}/>
+        <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
     </div>
   </>
 }
