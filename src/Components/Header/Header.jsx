@@ -44,7 +44,7 @@ const style = {
 function Header(){
     return <nav style={style.nav}>
         <div className="nav-logo">
-            <h2 style={style.h2}><span style={style.span}>{'<'}</span>B.dev<span style={style.span}>{'/>'}</span></h2>
+            <h2 style={style.h2}><span style={style.span}>{'<'}</span>B.DEV<span style={style.span}>{'/>'}</span></h2>
         </div>
         <div className="nav-link">
             <a style={style.navlinka} href="#"><FaGithub style={style.icon}/> GitHub</a>

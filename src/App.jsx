@@ -6,6 +6,7 @@ import Download from './Components/Cv/Download'
 import Social from './Components/Social/Social'
 import About from './Components/About/About'
 import Skills from './Components/Skills/Skills'
+import Projects from './Components/Projects/Projects'
 const TECHNOS = [
   {'name':'js.png', 'type':'front', color:'yellow'}, 
   {'name':'Sans titre.png', 'type':'front', color:'red'},
@@ -44,14 +45,22 @@ function App() {
   })
   return <>
     <div className="container">
+        <Acceuil />
+        <About />
+        <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
+        <Projects />
+    </div>
+  </>
+}
+
+
+function Acceuil(){
+  return <>
         <Header />
         <Type />
         <Body />
         <Download />
         <Social />
-        <About />
-        <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
-    </div>
   </>
 }
 
