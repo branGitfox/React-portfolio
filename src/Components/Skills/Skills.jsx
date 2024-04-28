@@ -1,18 +1,19 @@
 import React from 'react';
 import './Skills.css'
-import { TbBrandJavascript } from "react-icons/tb";
+import skills from '../../../public/skills.png'
 
 const style = {
 
     div:{
 
-        marginTop:'20px'
+        marginTop:'40px'
 
     },
     h2:{
         color:'white',
         textAlign:'center',
-        marginBottom:'10px'
+        marginBottom:'20px',
+        position:'relative'
   },
 
   btns:{
@@ -60,7 +61,7 @@ function Skills({technos ,handleFiltre , filtre}){
   
     
     return <div style={style.div} className="skills-container">
-        <h2 style={style.h2}>Skills</h2>
+        <h2 style={style.h2}>Skills <img style={{position:'absolute', top:'-2rem'}} src={skills} alt="" /></h2>
         <div style={style.filtresContainer} className="filtres-container">
             <button className={filtre==='All'?'active':'noneActive'} onClick={(e)=>handleFiltre(e)} style={style.btns}>All</button>
             <button className={filtre==='Front-Ends'?'active':'noneActive'} onClick={(e)=>handleFiltre(e)} style={style.btns}>Front-Ends</button>
