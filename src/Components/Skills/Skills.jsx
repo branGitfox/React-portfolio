@@ -81,7 +81,7 @@ function Skills({technos ,handleFiltre , filtre}){
                                 alignItems:'center',
                                 color:`${t.color}`
                              
-                              }}  className="techs">{t.name}</div>
+                              }}  className="techs"><img style={{width:'40px', height:'40px',borderRadius:'5px'}} src={t.name} alt="" srcset="" /></div>
                         ))
                     }
                    
