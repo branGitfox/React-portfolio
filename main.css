@@ -5,7 +5,10 @@
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
-
+body{
+    background:linear-gradient( rgba(1, 1, 100, 0.808) , rgb(53, 2, 53));
+    /* background:; */
+}
 .container {
     width: 85%;
     border:solid 1px ;  
