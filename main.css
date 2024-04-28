@@ -11,7 +11,7 @@ body{
 }
 .container {
     width: 85%;
-    border:solid 1px ;  
+    /* border:solid 1px ;   */
     min-height: 100vh;
     margin: auto;
     /* color: rgb(2, 10, 121); */
