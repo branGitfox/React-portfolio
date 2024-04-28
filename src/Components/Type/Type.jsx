@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-const phrase = 'Hello, welcome to my portfolio'
+const phrase = 'Hello 👋 , welcome to my portfolio'
 const style ={
     div:{
         maxWidth:'90%',
