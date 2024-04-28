@@ -7,13 +7,13 @@ import Social from './Components/Social/Social'
 import About from './Components/About/About'
 import Skills from './Components/Skills/Skills'
 const TECHNOS = [
-  {'name':'JS', 'type':'front'},
-  {'name':'HTML', 'type':'front'},
-  {'name':'css', 'type':'front'},
-  {'name':'PHP', 'type':'back'},
-  {'name':'Mysql', 'type':'back'},
-  {'name':'Ajax', 'type':'back'},
-  {'name':'Git', 'type':'others'},
+  {'name':'JS', 'type':'front', color:'yellow'}, 
+  {'name':'HTML', 'type':'front', color:'red'},
+  {'name':'css', 'type':'front', color:'blue'},
+  {'name':'PHP', 'type':'back', color:'pink'},
+  {'name':'Mysql', 'type':'back', color:'violet'},
+  {'name':'Ajax', 'type':'back', color:'orangered'},
+  {'name':'Git', 'type':'others', color:'orange'},
 ]
 function App() { 
   const [filtre, setFiltre] = useState('All')

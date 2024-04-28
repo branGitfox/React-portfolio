@@ -71,7 +71,17 @@ function Skills({technos ,handleFiltre , filtre}){
                 <div style={style.divTech}>
                     {
                         technos.map(t => (
-                            <div key={t.name} style={style.techs}  className="techs">{t.name}</div>
+                            <div key={t.name} style={{
+                                width:'70px',
+                                height:'50px',
+                                border:'solid 1px purple',
+                                borderRadius:'5px',
+                                display:'flex',
+                                justifyContent:'center',
+                                alignItems:'center',
+                                color:`${t.color}`
+                             
+                              }}  className="techs">{t.name}</div>
                         ))
                     }
                    
