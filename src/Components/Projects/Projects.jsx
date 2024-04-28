@@ -22,19 +22,40 @@ const style= {
 
     project:{
         width:'400px',
-        height:'300px',
+        height:'400px',
         border:'solid 1px purple',
         borderRadius:'5px',
-        boxShadow:'7px 7px 10px purple'
+        boxShadow:'7px 7px 10px purple',
+        padding:'10px'
+    },
+
+    h3:{
+        color:'violet',
+        textAlign:'left',
+        marginTop:'1rem',
+        marginBottom:'.3rem',
+        // textShadow:'5px 1px 5px purple'
+    },
+
+    span:{
+        color:'whitesmoke',
+        fontWeight:'200'
     }
 }
-function Projects(){
+
+function Projects({projects}){
     return <div style={style.div} className="project-container">
         <h2 style={style.h2}>Projects</h2>
         <div style={style.projects} className="projects">
-            <div style={style.project} className="project"></div>
-            <div style={style.project} className="project"></div>
-            <div style={style.project} className="project"></div>
+            {
+                projects.map(p => (
+                    <div style={style.project} className="project">
+                    <h3 style={style.h3} className="project-title"><span style={style.span}>Title:</span> {p.title}</h3>
+                    <h4 className='project-techs'><span style={style.span}>Techs: {p.techs.join(', ')}</span></h4>
+                </div>
+                ))
+            }
+          
         </div>
     </div>
 }

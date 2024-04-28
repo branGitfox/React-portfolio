@@ -17,6 +17,10 @@ const TECHNOS = [
   {'name':'ajax.png', 'type':'back', color:'orangered'},
   {'name':'git.png', 'type':'others', color:'orange'},
 ]
+
+const PROJECTS = [
+  {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax']}
+]
 function App() { 
   const [filtre, setFiltre] = useState('All')
   const handle = (e) => {
@@ -48,7 +52,7 @@ function App() {
         <Acceuil />
         <About />
         <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
-        <Projects />
+        <Projects projects={PROJECTS}/>
     </div>
   </>
 }
