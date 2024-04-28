@@ -13,7 +13,7 @@ const TECHNOS = [
   {'name':'react.svg', 'type':'front', color:'cyan'},
   {'name':'php.png', 'type':'back', color:'pink'},
   {'name':'images.png', 'type':'back', color:'violet'},
-  {'name':'Ajax', 'type':'back', color:'orangered'},
+  {'name':'ajax.png', 'type':'back', color:'orangered'},
   {'name':'git.png', 'type':'others', color:'orange'},
 ]
 function App() { 
