@@ -19,12 +19,17 @@ const TECHNOS = [
 ]
 
 const PROJECTS = [
-  {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax']}
+  {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'code':'localhost:5173'}
 ]
 function App() { 
   const [filtre, setFiltre] = useState('All')
   const handle = (e) => {
     setFiltre(e.target.textContent)
+  }
+
+  const [showCode, setShowCode] = useState(false)
+  const handleShowCode = () =>{
+    setShowCode(!showCode)
   }
 
   const technos = TECHNOS.filter(filt => {
@@ -47,12 +52,14 @@ function App() {
       return true
 
   })
+
+
   return <>
     <div className="container">
         <Acceuil />
         <About />
         <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
-        <Projects projects={PROJECTS}/>
+        <Projects projects={PROJECTS} showCode={showCode} handleShowCode={handleShowCode}/>
     </div>
   </>
 }

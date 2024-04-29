@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import project from '../../../public/project.png'
 import me from '../../assets/me.jpeg'
 import './Project.css'
@@ -48,15 +48,30 @@ const style= {
     actions:{
         width:'100%',
         height:'calc(100% - 320px)',
-        border:'solid 1px',
-        marginTop:'10px'
+        // border:'solid 1px',
+        marginTop:'10px',
+        display:'grid',
+        gridTemplateColumns:'1fr 1fr',
+        padding:'5px',
+        gap:'3px'
+    },
+
+    liveCode:{
+        border:'none',
+        borderRadius:'2px',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        color:'white',
+        background:'purple',
+        cursor:'pointer'
     }
    
 
   
 }
 
-function Projects({projects}){
+function Projects({projects, showCode, handleShowCode}){
     return <div style={style.div} className="project-container">
         <h2 style={style.h2}>Projects <img style={{position:'absolute', top:'-1.2rem'}} src={project} alt="" /></h2>
         <div style={style.projects} className="projects">
@@ -74,21 +89,37 @@ function Projects({projects}){
                         background:`url(${me})`,
                         backgroundRepeat:'no-repeat',
                         backgroundSize:"contain",
-                        backgroundPosition:'center'
+                        backgroundPosition:'center',
+                        transition:'all ease-in-out .5s'
                     }} 
                     className="image-container"
                     >
 
                     </div>
                     <div style={style.actions} className="actions-container">
-
+                        <div style={style.liveCode} className="live">Live</div>
+                        <div style={style.liveCode} onClick={() => handleShowCode()} className="code">Code</div>
+                        
                     </div>
+                    {
+                       showCode && <CodeLazy link={'http://localhost:5173/'}/>
+                    }
+                    
+                   
                 </div>
                 ))
             }
           
         </div>
     </div>
+}
+
+function CodeLazy({link}) {
+    const Iframe = lazy(() => import('../Iframe/Iframe.jsx'))
+    return <Suspense fallback={'loading...'}>
+          <Iframe link={link}/>  
+    </Suspense>
+    return 
 }
 
 export default Projects;
