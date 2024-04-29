@@ -1,4 +1,5 @@
 import React from 'react';
+import project from '../../../public/project.png'
 const style= {
     div:{
         marginTop:'20px'
@@ -6,7 +7,8 @@ const style= {
     h2:{
         color:'white',
         textAlign:'center',
-        marginBottom:'20px'
+        marginBottom:'20px',
+        position:'relative'
         
     },
     projects:{
@@ -45,7 +47,7 @@ const style= {
 
 function Projects({projects}){
     return <div style={style.div} className="project-container">
-        <h2 style={style.h2}>Projects</h2>
+        <h2 style={style.h2}>Projects <img style={{position:'absolute', top:'-1.2rem'}} src={project} alt="" /></h2>
         <div style={style.projects} className="projects">
             {
                 projects.map(p => (
