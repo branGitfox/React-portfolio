@@ -1,5 +1,7 @@
 import React from 'react';
 import project from '../../../public/project.png'
+import me from '../../assets/me.jpeg'
+import './Project.css'
 const style= {
     div:{
         marginTop:'20px'
@@ -42,7 +44,16 @@ const style= {
     span:{
         color:'whitesmoke',
         fontWeight:'200'
+    },
+    actions:{
+        width:'100%',
+        height:'calc(100% - 320px)',
+        border:'solid 1px',
+        marginTop:'10px'
     }
+   
+
+  
 }
 
 function Projects({projects}){
@@ -54,6 +65,24 @@ function Projects({projects}){
                     <div style={style.project} className="project">
                     <h3 style={style.h3} className="project-title"><span style={style.span}>Title:</span> {p.title}</h3>
                     <h4 className='project-techs'><span style={style.span}>Techs: {p.techs.join(', ')}</span></h4>
+                    <div style={{
+                        width:'100%',
+                        height:'calc(100% - 170px)',
+                        // border:'solid 1px ',
+                        borderRadius:'2px',
+                        marginTop:'20px',
+                        background:`url(${me})`,
+                        backgroundRepeat:'no-repeat',
+                        backgroundSize:"contain",
+                        backgroundPosition:'center'
+                    }} 
+                    className="image-container"
+                    >
+
+                    </div>
+                    <div style={style.actions} className="actions-container">
+
+                    </div>
                 </div>
                 ))
             }
