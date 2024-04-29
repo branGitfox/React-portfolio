@@ -29,6 +29,22 @@ a:hover{
 
 }
 
+.spin {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    position: relative;
+    left: 48%;
+
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 @media screen and (max-width:929px) {
     .container{
         width: 100%;

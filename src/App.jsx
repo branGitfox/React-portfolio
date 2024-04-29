@@ -19,7 +19,7 @@ const TECHNOS = [
 ]
 
 const PROJECTS = [
-  {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'code':'localhost:5173'}
+  {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'code':'http://localhost:5173/'}
 ]
 function App() { 
   const [filtre, setFiltre] = useState('All')

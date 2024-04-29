@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import project from '../../../public/project.png'
 import me from '../../assets/me.jpeg'
 import './Project.css'
+import { CgSpinner } from 'react-icons/cg';
 const style= {
     div:{
         marginTop:'20px'
@@ -102,7 +103,7 @@ function Projects({projects, showCode, handleShowCode}){
                         
                     </div>
                     {
-                       showCode && <CodeLazy link={'http://localhost:5173/'}/>
+                       showCode && <CodeLazy link={p.code}/>
                     }
                     
                    
@@ -116,7 +117,7 @@ function Projects({projects, showCode, handleShowCode}){
 
 function CodeLazy({link}) {
     const Iframe = lazy(() => import('../Iframe/Iframe.jsx'))
-    return <Suspense fallback={'loading...'}>
+    return <Suspense fallback={<CgSpinner className='spin' style={{color:'white'}}/>}>
           <Iframe link={link}/>  
     </Suspense>
     return 
