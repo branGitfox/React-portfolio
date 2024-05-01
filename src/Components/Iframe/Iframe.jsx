@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 const style = {
     container:{
         width:'100%',
-        height:'auto'
+        height:'auto',
+        
     },
     iframe:{
         width:'100%',
-        height:'100%'
+        height:'100%',
+        display:'block',
+        zIndex:'1000'
     }
 }
 function Iframe({link}){

@@ -18,19 +18,30 @@ const TECHNOS = [
   {'name':'git.png', 'type':'others', color:'orange'},
 ]
 
-const PROJECTS = [
-  {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'code':'http://localhost:5173/'}
-]
+
 function App() { 
   const [filtre, setFiltre] = useState('All')
+  const [showCode, setShowCode] = useState(false)
+
+
+  const projects=[
+    {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'image':'project-gestion.png', 'code':'http://localhost:5173/',},
+    {'title': 'Amidiko', 'techs':['HTML', 'CSS', 'Javascript', 'PHP', 'Mysql'], 'image':'project-gestion.png','code':'http://localhost:5173/'},
+  ]
   const handle = (e) => {
     setFiltre(e.target.textContent)
   }
 
-  const [showCode, setShowCode] = useState(false)
-  const handleShowCode = () =>{
+  const handleShowCode = () => {
     setShowCode(!showCode)
+   
   }
+  // console.log(PROJECTS);
+
+
+
+
+
 
   const technos = TECHNOS.filter(filt => {
       // if(filtre === 'All'){
@@ -59,7 +70,7 @@ function App() {
         <Acceuil />
         <About />
         <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
-        <Projects projects={PROJECTS} showCode={showCode} handleShowCode={handleShowCode}/>
+        <Projects projects={projects} showCode={showCode}  handleShowCode={handleShowCode}/>
     </div>
   </>
 }

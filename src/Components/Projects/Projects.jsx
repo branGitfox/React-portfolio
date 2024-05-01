@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import project from '../../../public/project.png'
+import project from '../../../public/idea.png'
 import me from '../../assets/me.jpeg'
 import './Project.css'
 import { CgSpinner } from 'react-icons/cg';
@@ -27,7 +27,7 @@ const style= {
 
     project:{
         width:'400px',
-        height:'400px',
+        minHeight:'400px',
         border:'solid 1px purple',
         borderRadius:'5px',
         boxShadow:'7px 7px 10px purple',
@@ -74,7 +74,7 @@ const style= {
 
 function Projects({projects, showCode, handleShowCode}){
     return <div style={style.div} className="project-container">
-        <h2 style={style.h2}>Projects <img style={{position:'absolute', top:'-1.2rem'}} src={project} alt="" /></h2>
+        <h2 style={style.h2}>Projects <img style={{position:'absolute', top:'-.8rem'}} src={project} alt="" /></h2>
         <div style={style.projects} className="projects">
             {
                 projects.map(p => (
@@ -87,7 +87,7 @@ function Projects({projects, showCode, handleShowCode}){
                         // border:'solid 1px ',
                         borderRadius:'2px',
                         marginTop:'20px',
-                        background:`url(${me})`,
+                        background:`url(${p.image})`,
                         backgroundRepeat:'no-repeat',
                         backgroundSize:"contain",
                         backgroundPosition:'center',
@@ -99,7 +99,7 @@ function Projects({projects, showCode, handleShowCode}){
                     </div>
                     <div style={style.actions} className="actions-container">
                         <div style={style.liveCode} className="live">Live</div>
-                        <div style={style.liveCode} onClick={() => handleShowCode()} className="code">Code</div>
+                        <div style={style.liveCode} onClick={() => handleShowCode(p.title)} className="code">Code</div>
                         
                     </div>
                     {
