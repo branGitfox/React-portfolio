@@ -21,7 +21,7 @@ const TECHNOS = [
 
 function App() { 
   const [filtre, setFiltre] = useState('All')
-  const [showCode, setShowCode] = useState(false)
+
 
 
   const projects=[
@@ -33,12 +33,14 @@ function App() {
   }
 
   const handleShowCode = () => {
-    setShowCode(!showCode)
-   
+    console.log(location.href);
   }
+
   // console.log(PROJECTS);
 
+  const redirectLive = () => {
 
+  }
 
 
 
@@ -70,7 +72,7 @@ function App() {
         <Acceuil />
         <About />
         <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
-        <Projects projects={projects} showCode={showCode}  handleShowCode={handleShowCode}/>
+        <Projects projects={projects}   handleShowCode={handleShowCode}/>
     </div>
   </>
 }

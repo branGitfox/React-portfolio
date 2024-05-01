@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React from 'react';
 import project from '../../../public/idea.png'
 import me from '../../assets/me.jpeg'
 import './Project.css'
@@ -78,7 +78,7 @@ function Projects({projects, showCode, handleShowCode}){
         <div style={style.projects} className="projects">
             {
                 projects.map(p => (
-                    <div style={style.project} className="project">
+                    <div key={p.title} style={style.project} className="project">
                     <h3 style={style.h3} className="project-title"><span style={style.span}>Title:</span> {p.title}</h3>
                     <h4 className='project-techs'><span style={style.span}>Techs: {p.techs.join(', ')}</span></h4>
                     <div style={{
@@ -99,12 +99,10 @@ function Projects({projects, showCode, handleShowCode}){
                     </div>
                     <div style={style.actions} className="actions-container">
                         <div style={style.liveCode} className="live">Live</div>
-                        <div style={style.liveCode} onClick={() => handleShowCode(p.title)} className="code">Code</div>
+                        <div style={style.liveCode} onClick={() => handleShowCode()} className="code">Code</div>
                         
                     </div>
-                    {
-                       showCode && <CodeLazy link={p.code}/>
-                    }
+
                     
                    
                 </div>
@@ -115,12 +113,6 @@ function Projects({projects, showCode, handleShowCode}){
     </div>
 }
 
-function CodeLazy({link}) {
-    const Iframe = lazy(() => import('../Iframe/Iframe.jsx'))
-    return <Suspense fallback={<CgSpinner className='spin' style={{color:'white'}}/>}>
-          <Iframe link={link}/>  
-    </Suspense>
-    return 
-}
+
 
 export default Projects;
