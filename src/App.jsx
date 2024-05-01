@@ -26,8 +26,8 @@ function App() {
 
 
   const projects=[
-    {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'image':'project-gestion.png', 'code':'http://index.html/',},
-    {'title': 'Amidiko', 'techs':['HTML', 'CSS', 'Javascript', 'PHP', 'Mysql'], 'image':'project-gestion.png','code':'http://localhost:5173/'},
+    {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'image':'project-gestion.png', 'code':'https://github.com/branGitfox/gestionEmployers',},
+    {'title': 'Amidiko', 'techs':['HTML', 'CSS', 'Javascript', 'PHP', 'Mysql'], 'image':'project-gestion.png','code':'https://github.com/branGitfox/Amidiko'},
   ]
   const handle = (e) => {
     setFiltre(e.target.textContent)
