@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiCopyright } from 'react-icons/bi';
 const style = {
     footer:{
         color:'purple',
@@ -8,7 +9,7 @@ const style = {
 }
 const Footer = () => {
     return <footer style={style.footer}>
-        CopyRight c {new Date().getFullYear()} <a style={{color:'purple'}} href="">BranGitFox</a>.
+        CopyRight {<BiCopyright />} {new Date().getFullYear()} <a style={{color:'purple'}} href="">BranGitFox</a>.
     </footer>
 }
 

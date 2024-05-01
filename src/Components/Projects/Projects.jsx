@@ -3,6 +3,8 @@ import project from '/idea.png'
 import me from '../../assets/me.jpeg'
 import './Project.css'
 import { CgSpinner } from 'react-icons/cg';
+import { BsEyeFill } from 'react-icons/bs';
+
 const style= {
     div:{
         marginTop:'20px'
@@ -98,7 +100,7 @@ function Projects({projects, showCode, handleShowCode}){
 
                     </div>
                     <div style={style.actions} className="actions-container">
-                        <div style={style.liveCode} className="live">Live {')))'}</div>
+                        <div style={style.liveCode} className="live">Live { <BsEyeFill style={{marginLeft:'5px'}}/>}</div>
                         <div style={style.liveCode} onClick={(e) => handleShowCode(e, p.code)} className="code">Code {'</>'}</div>
                         
                     </div>

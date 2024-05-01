@@ -1,9 +1,11 @@
 import React from 'react';
 import './Contact.css'
+import { BiSend } from 'react-icons/bi';
+import { GrContact } from 'react-icons/gr';
 
 const Contact = () => {
     return <div className="contact-container">
-        <h2>Contact Me</h2>
+        <h2 style={{position:'relative'}}>Contact Me {<GrContact style={{position:'absolute', top:'3px', marginLeft:'5px'}}/>}</h2>
         <form>
             <div>
                 <label className='label' htmlFor="email">Email</label>
@@ -14,7 +16,7 @@ const Contact = () => {
                 <textarea value={'Type your message here...'} id="" cols="30" rows="10"></textarea>
             </div>
             <div>
-                <button className='button' type='submit'>Send</button>
+                <button className='button' type='submit'>Send {<BiSend />}</button>
             </div>
         </form>
     </div>
