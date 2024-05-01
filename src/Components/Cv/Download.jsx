@@ -1,5 +1,6 @@
 import React from 'react';
 import './Download.css'
+import cv from '/cv.pdf'
 const style={
     div:{
         textAlign:'center',
@@ -18,7 +19,7 @@ const style={
 }
 function Download(){
     return <div style={style.div}>
-        <a style={style.a} href="">Download CV</a>
+        <a style={style.a} href='' download={cv}>Download CV</a>
         
     </div>
 }

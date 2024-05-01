@@ -83,7 +83,7 @@ function Body() {
                 <p style={style.motivation}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quia. Maxime quas voluptas aperiam, modi pariatur deserunt earum eveniet fugit laboriosam facilis possimus, voluptates accusantium repellat! Quidem iure repellat a.</p>
             </div>
             <div className="hire">
-                <label style={style.label} htmlFor="input">
+                <label style={style.label} htmlFor="email">
                     Contact me
                 </label>
             </div>
