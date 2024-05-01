@@ -57,6 +57,25 @@ a:hover{
     } */
 }
 
+h5 {
+    width: 20px;
+    height: 20px;
+    border: solid 1px white;    
+    border-radius: 12px;
+    border-top: 0;
+    border-right:solid .1px;
+    border-left:solid 2px white ;
+    border-bottom:solid 2px white ;
+    animation-name: spinner;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    transition: all .5s;
+}
 
+@keyframes spinner {
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 

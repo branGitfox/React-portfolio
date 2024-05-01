@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css'
-import skills from '../../../public/skills.png'
+import skills from '/skills.png'
 
 const style = {
 

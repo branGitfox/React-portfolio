@@ -7,6 +7,7 @@ import Social from './Components/Social/Social'
 import About from './Components/About/About'
 import Skills from './Components/Skills/Skills'
 import Projects from './Components/Projects/Projects'
+import { CgSpinner } from 'react-icons/cg';
 const TECHNOS = [
   {'name':'js.png', 'type':'front', color:'yellow'}, 
   {'name':'Sans titre.png', 'type':'front', color:'red'},
@@ -25,20 +26,31 @@ function App() {
 
 
   const projects=[
-    {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'image':'project-gestion.png', 'code':'http://localhost:5173/',},
+    {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'image':'project-gestion.png', 'code':'http://index.html/',},
     {'title': 'Amidiko', 'techs':['HTML', 'CSS', 'Javascript', 'PHP', 'Mysql'], 'image':'project-gestion.png','code':'http://localhost:5173/'},
   ]
   const handle = (e) => {
     setFiltre(e.target.textContent)
   }
 
-  const handleShowCode = () => {
-    console.log(location.href);
+  const handleShowCode = (e,link) => {
+    load(e)
+    setTimeout(() => {
+      location.href=link
+    }, 2000)
+    
   }
+
+  const load = (e) => {   
+    
+    e.target.innerHTML= '<h5></h5>'
+  }
+    
 
   // console.log(PROJECTS);
 
   const redirectLive = () => {
+    location.href="https://index.html"
 
   }
 

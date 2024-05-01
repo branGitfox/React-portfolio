@@ -1,5 +1,5 @@
 import React from 'react';
-import project from '../../../public/idea.png'
+import project from '/idea.png'
 import me from '../../assets/me.jpeg'
 import './Project.css'
 import { CgSpinner } from 'react-icons/cg';
@@ -99,7 +99,7 @@ function Projects({projects, showCode, handleShowCode}){
                     </div>
                     <div style={style.actions} className="actions-container">
                         <div style={style.liveCode} className="live">Live</div>
-                        <div style={style.liveCode} onClick={() => handleShowCode()} className="code">Code</div>
+                        <div style={style.liveCode} onClick={(e) => handleShowCode(e, p.code)} className="code">Code</div>
                         
                     </div>
 
