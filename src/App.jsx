@@ -9,6 +9,7 @@ import Skills from './Components/Skills/Skills'
 import Projects from './Components/Projects/Projects'
 import Contact  from './Components/Contact/Contact'
 import { CgSpinner } from 'react-icons/cg';
+import Footer from './Components/Footer/Footer'
 const TECHNOS = [
   {'name':'js.png', 'type':'front', color:'yellow'}, 
   {'name':'Sans titre.png', 'type':'front', color:'red'},
@@ -87,6 +88,7 @@ function App() {
         <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
         <Projects projects={projects}   handleShowCode={handleShowCode}/>
         <Contact />
+        <Footer />
     </div>
   </>
 }

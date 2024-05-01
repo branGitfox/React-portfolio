@@ -98,8 +98,8 @@ function Projects({projects, showCode, handleShowCode}){
 
                     </div>
                     <div style={style.actions} className="actions-container">
-                        <div style={style.liveCode} className="live">Live</div>
-                        <div style={style.liveCode} onClick={(e) => handleShowCode(e, p.code)} className="code">Code</div>
+                        <div style={style.liveCode} className="live">Live {')))'}</div>
+                        <div style={style.liveCode} onClick={(e) => handleShowCode(e, p.code)} className="code">Code {'</>'}</div>
                         
                     </div>
 
