@@ -39,12 +39,12 @@ const style = {
     }
 
 }
-function Social(){
+function Social({socialRoot}){
     return <div style={style.div} className="social-container">
-        <div style={style.childDiv} className="youtube"><FcStart style={style.icon}/></div>
-        <div style={style.childDiv} className="mails"><TbBrandGmail style={{color:'whitesmoke', width:'50px',  height:'50px'}}/></div>
-        <div style={style.childDiv} className="instagram"><FaSquareInstagram style={{color:'pink', width:'40px',  height:'40px'}}/></div>
-        <div style={style.childDiv} className="facebook"><FaFacebook style={{color:'blue', width:'50px',  height:'50px'}}/></div>
+        <div style={style.childDiv} onClick={()=>socialRoot('https://www.youtube.com/channel/UC8BkMayLRh9Zx6m8kUeMHXw')} className="youtube"><FcStart style={style.icon}/></div>
+        <div style={style.childDiv} onClick={()=>socialRoot('vixfgit@gmail.com')} className="mails"><TbBrandGmail style={{color:'whitesmoke', width:'50px',  height:'50px'}}/></div>
+        <div style={style.childDiv} onClick={()=>socialRoot('https://www.instagram.com/brandonfidelin/')} className="instagram"><FaSquareInstagram style={{color:'pink', width:'40px',  height:'40px'}}/></div>
+        <div style={style.childDiv} onClick={()=>socialRoot('https://www.facebook.com/brandonfidelin/')} className="facebook"><FaFacebook style={{color:'blue', width:'50px',  height:'50px'}}/></div>
     </div>
 }
 

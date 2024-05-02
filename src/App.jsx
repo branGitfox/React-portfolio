@@ -24,8 +24,9 @@ const TECHNOS = [
 
 function App() { 
   const [filtre, setFiltre] = useState('All')
-
-
+const socialRoot = (link) => {
+  location.href=link
+}
 
   const projects=[
     {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'image':'project-gestion.png', 'code':'https://github.com/branGitfox/gestionEmployers',},
@@ -104,7 +105,7 @@ function Acceuil(){
         <Type />
         <Body />
         <Download />
-        <Social />
+        <Social socialRoot={socialRoot}/>
   </>
 }
 

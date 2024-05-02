@@ -47,7 +47,7 @@ function Header(){
             <h2 style={style.h2}><span style={style.span}>{'<'}</span>B.DEV<span style={style.span}>{'/>'}</span></h2>
         </div>
         <div className="nav-link">
-            <a style={style.navlinka} href="#"><FaGithub style={style.icon}/> GitHub</a>
+            <a style={style.navlinka} href="https://github.com/branGitfox"><FaGithub style={style.icon}/> GitHub</a>
         </div>
     </nav>
 }
