@@ -80,7 +80,7 @@ function Body() {
             <div className="intro-phrase">
                 <p style={style.nom}>Ravomanana Brandon Fidelin.</p>
                 <p style={style.stack}>Full stack developper</p>
-                <p style={style.motivation}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quia. Maxime quas voluptas aperiam, modi pariatur deserunt earum eveniet fugit laboriosam facilis possimus, voluptates accusantium repellat! Quidem iure repellat a.</p>
+                <p style={style.motivation}>A young, motivated student in computer engineering. Full stack and back end specialization at your service. If my profile and my skills suit you, do not hesitate to contact me. On that note, enjoy the visit.</p>
             </div>
             <div className="hire">
                 <label style={style.label} htmlFor="email">
