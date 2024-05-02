@@ -9,11 +9,11 @@ const Contact = ({handleSubmit, handleEmail, handleMessage, email, message}) => 
         <form onSubmit={(e) => handleSubmit(e)}>
             <div>
                 <label className='label' htmlFor="email">Email</label>
-                <input onChange={(e) => handleEmail(e)} value={email} type="mail" placeholder='@your email here...' id='email'/>
+                <input required onChange={(e) => handleEmail(e)} value={email} type="mail" placeholder='@your email here...' id='email'/>
             </div>
             <div>
                 <label className='label' htmlFor="">Messages</label>
-                <textarea onChange={(e) =>handleMessage()} value={message===''?'Type your message here...':message} id="" cols="30" rows="10" ></textarea>
+                <textarea required onChange={(e) =>handleMessage()} value={message===''?'Type your message here...':message} id="" cols="30" rows="10" ></textarea>
             </div>
             <div>
                 <button className='button' type='submit'>Send {<BiSend />}</button>
