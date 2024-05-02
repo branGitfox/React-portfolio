@@ -28,6 +28,20 @@ const socialRoot = (link) => {
   location.href=link
 }
 
+const [email, setEmail] = useState()
+const [message, setMessage] = useState()
+
+const handleEmail = (e) => {
+  setEmail(e.target.value)
+}
+
+const handleMessage = (e) => {
+  setMessage(e.target.value)
+}
+const handleSubmit = (e) => {
+  e.preventDefault()
+  alert(email +' your message has been sended successfuly !')
+}
   const projects=[
     {'title': 'Employed Management', 'techs':['HTML', 'CSS', 'Bootstrap', 'Javascript', 'PHP', 'Mysql', 'Ajax'], 'image':'project-gestion.png', 'code':'https://github.com/branGitfox/gestionEmployers',},
     {'title': 'Amidiko', 'techs':['HTML', 'CSS', 'Javascript', 'PHP', 'Mysql'], 'image':'project-gestion.png','code':'https://github.com/branGitfox/Amidiko'},
@@ -92,7 +106,7 @@ const socialRoot = (link) => {
         <About />
         <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
         <Projects projects={projects}   handleShowCode={handleShowCode}/>
-        <Contact />
+        <Contact handleSubmit={handleSubmit} handleEmail={handleEmail} email={email} message={message} handleMessage={handleMessage }/>
         <Footer />
     </div>
   </>
