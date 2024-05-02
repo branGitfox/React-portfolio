@@ -88,7 +88,7 @@ const socialRoot = (link) => {
 
   return <>
     <div className="container">
-        <Acceuil />
+        <Acceuil socialRoot={socialRoot}/>
         <About />
         <Skills technos={technos} handleFiltre={handle} filtre={filtre}/>
         <Projects projects={projects}   handleShowCode={handleShowCode}/>
@@ -99,7 +99,7 @@ const socialRoot = (link) => {
 }
 
 
-function Acceuil(){
+function Acceuil({socialRoot}){
   return <>
         <Header />
         <Type />
