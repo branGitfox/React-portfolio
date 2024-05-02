@@ -40,6 +40,10 @@ function App() {
     setTimeout(() => {
       location.href=link
     }, 2000)
+
+    setTimeout(()=> {
+      e.target.innerHTML='Code </>'
+    }, 4000)
     
   }
 
